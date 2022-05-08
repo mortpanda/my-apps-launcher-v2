@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'my-apps-launcher-v2'`, () => {
+  it(`should have as title 'okta-japan-template-v5-primeui'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('my-apps-launcher-v2');
+    expect(app.title).toEqual('okta-japan-template-v5-primeui');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('my-apps-launcher-v2 app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('okta-japan-template-v5-primeui app is running!');
   });
 });

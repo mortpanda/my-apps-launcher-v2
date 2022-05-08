@@ -1,7 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { LandingComponent } from './landing/landing.component';
+import { StartComponent } from './start/start.component';
+import { AdminWebsitesComponent } from './admin-websites/admin-websites.component';
+import { UserWebsitesComponent } from './user-websites/user-websites.component';
+import { OktaWebsitesComponent } from './okta-websites/okta-websites.component';
+import { KlabSitesComponent } from './klab-sites/klab-sites.component';
+import { DevinfoWebsitesComponent } from './devinfo-websites/devinfo-websites.component';
+const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: LandingComponent },
+  { path: 'start', component: StartComponent },
+  { path: 'admin-dash', component: AdminWebsitesComponent },
+  { path: 'user-dash', component: UserWebsitesComponent },
+  { path: 'okta', component: OktaWebsitesComponent },
+  { path: 'devinfo', component: DevinfoWebsitesComponent },
+  { path: 'klab', component: KlabSitesComponent },
+  
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("../node_modules/primeng/resources/themes/lara-light-blue/theme.css");
+@import url("../node_modules/primeng/resources/primeng.min.css");
+@import url("../node_modules/primeicons/primeicons.css");
+@import url("../node_modules/primeflex/primeflex.css");
+
+html,
+body {
+  height: auto;
+  width: auto;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+  color: #00297a;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+$primary: #00297a !default;
+$secondary: #ffffff !default;
+$success: #00b478 !default;
+$info: #abd5d6 !default;
+$warning: #ffc61c !default;
+$danger: #ec3629 !default;
+
+.p-element,
+.pi,
+.pi-fw:link {
+  text-decoration: none;
+  color: #ffffff !important;
+  cursor: pointer !important;
+}
+.p-element,
+.pi,
+.pi-fw:link {
+  text-decoration: none;
+  color: #ffffff !important;
+  cursor: pointer !important;
+}
+.p-element,
+.pi,
+.pi-fw:link :hover {
+  text-decoration: none;
+  color: #ffffff !important;
+  cursor: pointer !important;
+}
+.p-element,
+.pi,
+.pi-fw:link :active {
+  text-decoration: none;
+  color: #ffffff !important;
+  cursor: pointer !important;
+}
+
+.p-menu .p-menuitem-link .p-menuitem-icon {
+  color: #00297a !important;
+}
+
+.p-button {
+  text-align: center !important;
+  align-items: center !important;
+  align-self: center !important;
+  align-content: center !important;
+  padding: 15px !important;
+}
+
+.p-button {
+  background-color: #00297a !important;
+  color: #ffffff !important;
+}
+
+.p-button:hover {
+  background-color: #ffffff !important;
+  color: #00297a !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #00297a !important;
+  .p-button-icon {
+    color: #00297a !important;
+  }
+}
+
+.bannerDiv{
+  width: 100%!important;
+  margin-top: 15px!important;
+  text-align: right!important;
+  margin-right: 20px!important;
+  .subBanner{
+    width: 10%!important;
+  }
+}
+
+
+  .p-button{
+  z-index: 6000!important;
+}

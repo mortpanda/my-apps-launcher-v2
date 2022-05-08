@@ -1,0 +1,52 @@
+<app-sub-navbar></app-sub-navbar>
+
+<ng-template #bigScreen>
+  <div class="userName">{{strFullName}}</div>
+
+  <div class="MasterDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+
+    <div class="pageTitleDiv">
+      Okta Websites
+    </div>
+
+    <div class="startMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+      <div class="PanelDiv" *ngFor="let itemWebites of oktaWebsite">
+        <p-button id="appBtn" icon="pi pi-external-link" iconPos="right" (onClick)="OpenWebsite(itemWebites.url)" pTooltip="{{itemWebites.url}}"  tooltipPosition="bottom">
+          <a>{{itemWebites.name}}</a>
+        </p-button>
+      </div>
+    </div>
+
+    <div class="bannerDiv">
+      <img src="../../assets//img/okta_japan_white_medium.png" class="subBanner">
+    </div>
+  </div>
+</ng-template>
+<!-- ************************* SMALL SCREEN ************************* -->
+<!-- ************************* SMALL SCREEN ************************* -->
+
+<ng-template [ngIf]="smallScreen" [ngIfElse]="bigScreen">
+  <div fxLayout="row wrap" fxLayoutAlign="center start">
+    <div class="SMuserName">{{strFullName}}</div>
+  </div>
+
+  <div class="smMasterDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+
+    <div class="smpageTitleDiv">
+      Okta Websites
+    </div>
+
+    <div class="smstartMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+      <div class="PanelDiv" *ngFor="let itemWebites of oktaWebsite">
+        <p-button id="appBtn" icon="pi pi-external-link" iconPos="right" (onClick)="OpenWebsite(itemWebites.url)">
+
+          <a>{{itemWebites.name}}</a>
+        </p-button>
+      </div>
+    </div>
+
+    <div class="bannerDiv">
+      <img src="../../assets//img/okta_japan_white_medium.png" class="subBanner">
+    </div>
+  </div>
+</ng-template>
