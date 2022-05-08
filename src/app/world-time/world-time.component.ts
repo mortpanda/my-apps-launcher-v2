@@ -7,6 +7,7 @@ import { OktaConfigService } from "../shared/okta/okta-config.service";
 import { OktaWidgetService } from '../shared/okta/okta-widget.service';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MenuItem } from 'primeng/api';
+import {WorldClockService} from '../shared/world-clock/world-clock.service';
 
 @Component({
   selector: 'app-world-time',
@@ -27,6 +28,7 @@ export class WorldTimeComponent implements OnInit {
     public OktaConfigService: OktaConfigService,
     public OktaWidgetService: OktaWidgetService,
     private breakpointObserver: BreakpointObserver,
+    private WorldClockService:WorldClockService,
   ) {
     breakpointObserver.observe([
       Breakpoints.XSmall,
