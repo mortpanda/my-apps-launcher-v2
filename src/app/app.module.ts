@@ -28,7 +28,8 @@ import { UserWebsitesComponent } from './user-websites/user-websites.component';
 import { OktaWebsitesComponent } from './okta-websites/okta-websites.component';
 import { KlabSitesComponent } from './klab-sites/klab-sites.component';
 import { DevinfoWebsitesComponent } from './devinfo-websites/devinfo-websites.component';
-
+import { WorldTimeComponent } from './world-time/world-time.component';
+import {FieldsetModule} from 'primeng/fieldset';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { DevinfoWebsitesComponent } from './devinfo-websites/devinfo-websites.co
     OktaWebsitesComponent,
     KlabSitesComponent,
     DevinfoWebsitesComponent,
+    WorldTimeComponent,
 
   ],
   imports: [
@@ -64,6 +66,7 @@ import { DevinfoWebsitesComponent } from './devinfo-websites/devinfo-websites.co
     CardModule,
     SpeedDialModule,
     PanelModule,
+    FieldsetModule,
 
   ],
   providers: [],

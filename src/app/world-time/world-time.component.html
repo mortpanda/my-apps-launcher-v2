@@ -1,0 +1,45 @@
+<app-sub-navbar></app-sub-navbar>
+<ng-template #bigScreen>
+
+  <div class="MainDiv"></div>
+  <div class="userName">{{strFullName}}</div>
+
+  <div class="MasterDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+
+    <div class="pageTitleDiv">
+      World Time
+    </div>
+
+    <div class="timeDiv">
+      <p-fieldset legend="Header" id="fieldSet">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        </p>
+      </p-fieldset>
+    </div>
+
+    <div class="bannerDiv">
+      <img src="assets/img/okta_japan_white_medium.png" class="subBanner">
+    </div>
+  </div>
+</ng-template>
+
+<!-- ************************* SMALL SCREEN ************************* -->
+<!-- ************************* SMALL SCREEN ************************* -->
+
+<ng-template [ngIf]="smallScreen" [ngIfElse]="bigScreen">
+  <div fxLayout="row wrap" fxLayoutAlign="center start">
+    <div class="SMuserName">{{strFullName}}</div>
+  </div>
+
+  <div class="smMasterDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+
+    <div class="smpageTitleDiv">
+      World Time
+    </div>
+
+
+    <div class="bannerDiv">
+      <img src="assets/img/okta_japan_white_medium.png" class="subBanner">
+    </div>
+  </div>
+</ng-template>

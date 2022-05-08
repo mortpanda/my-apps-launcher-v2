@@ -4,7 +4,7 @@ import {OktaConfigService} from '../shared/okta/okta-config.service';
 import { ViewEncapsulation } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { HostListener } from "@angular/core";
+// import { HostListener } from "@angular/core";
 
 @Component({
   selector: 'app-landing',

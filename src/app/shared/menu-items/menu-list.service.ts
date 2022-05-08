@@ -52,6 +52,12 @@ export class MenuListService {
       style: 'font-size: 1.5rem;',
       routerLink: '/devinfo'
     },
+    {
+      label: 'World Time',
+      icon: "pi pi-clock",
+      style: 'font-size: 1.5rem;',
+      routerLink: '/worldtime'
+    },
   ];
 
 
