@@ -345,25 +345,25 @@ export const AdminSites = [
     name: 'Japan Corporate AEs Test Org',
     url: 'https://jpn-corp-ae-admin.oktapreview.com/admin/dashboard'
   },
-  {
-    name: 'DeNA Test Org',
-    url: 'https://csm-dena-admin.okta.com/admin/dashboard/',
-    image: 'assets/img/okta_logo_blue_small.png'
-  },
-  {
-    name: 'JFE Test Admin',
-    url: 'https://jfe-eng-sub-admin.oktapreview.com/admin/dashboard/',
-    image: 'assets/img/okta_logo_blue_small.png'
-  },
+  // {
+  //   name: 'DeNA Test Org',
+  //   url: 'https://csm-dena-admin.okta.com/admin/dashboard/',
+  //   image: 'assets/img/okta_logo_blue_small.png'
+  // },
+  // {
+  //   name: 'JFE Test Admin',
+  //   url: 'https://jfe-eng-sub-admin.oktapreview.com/admin/dashboard/',
+  //   image: 'assets/img/okta_logo_blue_small.png'
+  // },
   {
     name: 'Auth0 Org',
     url: 'https://manage.auth0.com/dashboard/jp/kent-nagao/',
     image: 'assets/img/okta_logo_blue_small.png'
   },
-  {
-    name: 'mixi-dc-test org',
-    url: 'https://oktamixi-dc-test-admin.okta.com/admin/dashboard'
-  },
+  // {
+  //   name: 'mixi-dc-test org',
+  //   url: 'https://oktamixi-dc-test-admin.okta.com/admin/dashboard'
+  // },
   {
     name: 'mO365 Admin Centre',
     url: 'https://admin.microsoft.com/Adminportal'

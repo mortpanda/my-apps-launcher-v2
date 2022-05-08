@@ -7,8 +7,14 @@
 
 html,
 body {
-  height: auto;
-  width: auto;
+  // height: auto;
+  // width: auto;
+
+  min-height: 100% !important;
+  min-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
   color: #00297a;
@@ -94,4 +100,9 @@ $danger: #ec3629 !default;
 
   .p-button{
   z-index: 6000!important;
+}
+
+.p-tooltip{
+  z-index: 9000!important;
+  text-align: center!important;
 }

@@ -11,14 +11,14 @@
 
     <div class="startMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
       <div class="PanelDiv" *ngFor="let itemWebites of AdminSites">
-        <p-button id="appBtn" icon="pi pi-external-link" iconPos="right" (onClick)="OpenWebsite(itemWebites.url)" pTooltip="{{itemWebites.url}}"  tooltipPosition="bottom">
+        <p-button id="appBtn" icon="pi pi-external-link" iconPos="right" (onClick)="OpenWebsite(itemWebites.url)" pTooltip="{{itemWebites.url}}" tooltipPosition="bottom">
           <a>{{itemWebites.name}}</a>
         </p-button>
       </div>
     </div>
 
     <div class="bannerDiv">
-      <img src="../../assets//img/okta_japan_white_medium.png" class="subBanner">
+      <img src="assets/img/okta_japan_white_medium.png" class="subBanner">
     </div>
   </div>
 </ng-template>

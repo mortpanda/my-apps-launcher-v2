@@ -4,18 +4,21 @@
     /* background-image: url('../assets/img/okta_blue_bg.png'); */
     background-image: url('assets/img/bg-cloud-v2.jpg');
 
-    height: 100%;
+    min-height: 100% !important;
+    min-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
     /* Below for Parallax effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;   
-    
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+
   }
 </style>
 
 <div class="appBackground bg-image" id="intro">
-    
+
   <!-- <div style="background-color: rgba(0, 0, 0, 0.55)"></div> -->
   <app-navbar></app-navbar>
   <div class="mainContainer" fxLayout="row wrap" fxLayoutAlign="center start">
