@@ -2,6 +2,7 @@
   // border-style: dotted;
   padding-top: 120px !important;
   width: 85vw;
+  text-align: center!important;
 }
 
 .smTimeMasterDiv {
@@ -119,10 +120,12 @@
   box-shadow: 3px 9px 10px -2px black !important;
   margin:10px!important;
   .p-panel-header{
-    text-align: center !important;
     background-color: #41414B!important;
     color: #ffffff!important;
     font-size: 20px !important;
+  }
+  #p-panel-4-titlebar{
+    text-align: center !important;
   }
   .p-panel-content {
     padding-top:5px!important;
