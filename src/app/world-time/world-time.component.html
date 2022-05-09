@@ -4,17 +4,43 @@
   <div class="MainDiv"></div>
   <div class="userName">{{strFullName}}</div>
 
-  <div class="MasterDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+  <div class="TimeMasterDiv" fxLayout="row wrap" fxLayoutAlign="center center">
 
     <div class="pageTitleDiv">
       World Time
     </div>
 
-    <div class="timeDiv">
-      <p-fieldset legend="Header" id="fieldSet">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        </p>
-      </p-fieldset>
+    <div class="timeDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+      
+      <p-panel header="California" id="lgDateTimePanel">
+        <p class="pdate">{{WorldClockService.strSanFranDate}}</p>
+        <p class="ptime">{{WorldClockService.strSanFranTime}}</p>
+      </p-panel>
+
+      <p-panel header="New York" id="lgDateTimePanel">
+        <p class="pdate">{{WorldClockService.strNYDate}}</p>
+        <p class="ptime">{{WorldClockService.strNYTime}}</p>
+      </p-panel>
+
+      <p-panel header="London" id="lgDateTimePanel">
+        <p class="pdate">{{WorldClockService.strLondonDate}}</p>
+        <p class="ptime">{{WorldClockService.strLondonTime}}</p>
+      </p-panel>
+
+      <p-panel header="Singapore" id="lgDateTimePanel">
+        <p class="pdate">{{WorldClockService.strSingaporeDate}}</p>
+        <p class="ptime">{{WorldClockService.strSingaporeTime}}</p>
+      </p-panel>
+
+      <p-panel header="Sydney" id="lgDateTimePanel">
+        <p class="pdate">{{WorldClockService.strSydneyDate}}</p>
+        <p class="ptime">{{WorldClockService.strSydneyDate}}</p>
+      </p-panel>
+
+      <p-panel header="UTC" id="lgDateTimePanel">
+        <p class="pdate">{{WorldClockService.strUTCDate}}</p>
+        <p class="ptime">{{WorldClockService.strUTCTime}}</p>
+      </p-panel>
     </div>
 
     <div class="bannerDiv">
@@ -31,12 +57,44 @@
     <div class="SMuserName">{{strFullName}}</div>
   </div>
 
-  <div class="smMasterDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+  <div class="smTimeMasterDiv" fxLayout="row wrap" fxLayoutAlign="center center">
 
     <div class="smpageTitleDiv">
       World Time
     </div>
 
+    <div class="timeDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+      
+      <p-panel header="California" id="lgDateTimePanel">
+        <p class="pdate">{{WorldClockService.strSanFranDate}}</p>
+        <p class="ptime">{{WorldClockService.strSanFranTime}}</p>
+      </p-panel>
+
+      <p-panel header="New York" id="lgDateTimePanel">
+        <p class="pdate">{{WorldClockService.strNYDate}}</p>
+        <p class="ptime">{{WorldClockService.strNYTime}}</p>
+      </p-panel>
+
+      <p-panel header="London" id="lgDateTimePanel">
+        <p class="pdate">{{WorldClockService.strLondonDate}}</p>
+        <p class="ptime">{{WorldClockService.strLondonTime}}</p>
+      </p-panel>
+
+      <p-panel header="Singapore" id="lgDateTimePanel">
+        <p class="pdate">{{WorldClockService.strSingaporeDate}}</p>
+        <p class="ptime">{{WorldClockService.strSingaporeTime}}</p>
+      </p-panel>
+
+      <p-panel header="Sydney" id="lgDateTimePanel">
+        <p class="pdate">{{WorldClockService.strSydneyDate}}</p>
+        <p class="ptime">{{WorldClockService.strSydneyDate}}</p>
+      </p-panel>
+
+      <p-panel header="UTC" id="lgDateTimePanel">
+        <p class="pdate">{{WorldClockService.strUTCDate}}</p>
+        <p class="ptime">{{WorldClockService.strUTCTime}}</p>
+      </p-panel>
+    </div>
 
     <div class="bannerDiv">
       <img src="assets/img/okta_japan_white_medium.png" class="subBanner">

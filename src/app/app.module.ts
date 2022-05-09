@@ -30,6 +30,7 @@ import { KlabSitesComponent } from './klab-sites/klab-sites.component';
 import { DevinfoWebsitesComponent } from './devinfo-websites/devinfo-websites.component';
 import { WorldTimeComponent } from './world-time/world-time.component';
 import {FieldsetModule} from 'primeng/fieldset';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,9 @@ import {FieldsetModule} from 'primeng/fieldset';
     FieldsetModule,
 
   ],
-  providers: [],
+  providers: [
+    DatePipe,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
