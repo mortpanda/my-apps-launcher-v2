@@ -41,6 +41,7 @@ export class MyProjectAppsComponent implements OnInit {
   thisUid;
   invokeURI;
   strFullName
+  appResponse;
   async ngOnInit() {
     this.strUserSession = await this.authService.isAuthenticated();
     console.log(this.strUserSession)
@@ -61,15 +62,67 @@ export class MyProjectAppsComponent implements OnInit {
         this.thisUid = await this.strThisUser.sub;
         await this.OktaGetTokenService.GetAccessToken();
         this.invokeURI = await this.OktaGetTokenService.myAccessToken.claims.myLauncherV2Apps
-        
+
         console.log(this.invokeURI);
         console.log(this.strThisUser)
 
-        // await this.OktaApiService.
+        let requestBody;
+        requestBody = {
+          uid: this.thisUid,
+        }
+        this.appResponse = await this.OktaApiService.InvokeFlow(this.invokeURI, requestBody)
+        // console.log(this.appResponse)
+        this.processApps(this.appResponse)
         break;
     }
-     
-
   }
+
+  myProjectApps = [];
+  ghURL = "https://mortpanda.github.io/";
+  bolGHURL: boolean;
+  async processApps(arrApps) {
+    for (var i = 0; i < arrApps.length; i++) {
+      switch (arrApps[i].Label) {
+        case "Okta Workflows": {
+          break;
+        }
+        case "Okta Workflows OAuth": {
+          break;
+        }
+        default: {
+          // console.log(arrApps[i])
+
+          // this.myProjectApps.push({
+          //   lebel: arrApps[i].Label,
+          //   logoURI: arrApps[i]["Links.logo.0.href"],
+
+          // });
+          for (var n = 0; n < arrApps[i]["Settings.oauthClient.post_logout_redirect_uris"].length; n++) {
+            this.bolGHURL = arrApps[i]["Settings.oauthClient.post_logout_redirect_uris"][n].includes(this.ghURL);
+            // console.log(this.bolGHURL)
+            // console.log(arrApps[i]["Settings.oauthClient.post_logout_redirect_uris"][n])
+            switch (this.bolGHURL){
+              case true:{
+                this.myProjectApps.push({
+                  lebel: arrApps[i].Label,
+                  logoURI: arrApps[i]["Links.logo.0.href"],
+                  struri:  arrApps[i]["Settings.oauthClient.post_logout_redirect_uris"][n],
+                });
+                break;
+              }
+              default:{
+                break;
+              }
+            }
+          }
+          break;
+        }
+      }
+
+    }
+    console.log(this.myProjectApps)
+  }
+
+
 
 }
