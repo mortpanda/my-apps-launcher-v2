@@ -11,8 +11,8 @@
     <div class="projMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
       <div *ngIf="appLoad; else notShow">
 
-        <button pButton pRipple type="button" class="p-button-raised p-button-text p-button-plain"  styleClass="p-button-lg"
-          *ngFor="let itemProject of myProjectApps" id="myProjectBtn">
+        <button pButton pRipple type="button" class="p-button-raised p-button-text p-button-plain"
+          styleClass="p-button-lg" *ngFor="let itemProject of myProjectApps" id="myProjectBtn">
 
           <div class="projectBtnLogoDiv" fxLayout="row wrap" fxLayoutAlign="center center">
             <img src="{{itemProject.logoURI}}" class="projectLogo">
@@ -61,16 +61,27 @@
 
     <div class="smprojMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
 
-      <div *ngIf="appLoad; else notShow">
-        Loaded
+      <div class="smBtnDiv" *ngIf="appLoad; else notShow">
+        <button pButton pRipple type="button" class="p-button-raised p-button-text p-button-plain"
+          styleClass="p-button-lg" *ngFor="let itemProject of myProjectApps" id="smMyProjectBtn">
+
+          <div class="projectBtnLogoDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+            <img src="{{itemProject.logoURI}}" class="projectLogo">
+          </div>
+          <div class="labelDiv">
+            {{ itemProject.label }}
+          </div>
+        </button>
       </div>
 
 
       <ng-template #notShow>
-        <div class="p-field p-col-12 p-md-6">
-          <p-progressSpinner></p-progressSpinner>
+        <div class="smProgressDiv">
+          <div class="p-field p-col-12 p-md-6" id="smProgressDiv">
+            <p-progressSpinner strokeWidth="8" id="smProgress"></p-progressSpinner>
 
-        </div>
+          </div>
+          </div>
       </ng-template>
 
 
