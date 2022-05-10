@@ -98,13 +98,58 @@
   font-weight: 800 !important;
   margin-top: 20px !important;
 }
-
 .p-field, .p-col-12, .p-md-6 {
   width: 200px  !important;
   height: 200px !important;
 }
 .p-progress-spinner-svg {
   width: 200px  !important;
-  height: 200px !important;
-  
+  height: 200px !important;  
+}
+
+.p-button {
+  text-align: center !important;
+  align-items: center !important;
+  align-self: center !important;
+  align-content: center !important;
+  box-shadow: 3px 9px 10px -2px black !important;
+  padding: 15px !important;
+}
+
+.p-button {
+  background-color: #FFFFFF !important;
+  color: #00297A !important;
+  box-shadow: 3px 9px 10px -2px black !important;
+}
+
+.p-button:hover {
+  background-color: #ffffff !important;
+  color: #00297a !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #00297a !important;
+  opacity: 0.5!important;
+  box-shadow: 3px 9px 10px -2px black !important;
+  .p-button-icon {
+    color: #00297a !important;
+
+  }
+}
+
+#myProjectBtn{
+  width: 200px!important;
+  height: 200px!important;
+}
+.projectLogo{
+  width:100%!important;
+}
+
+.projectBtnLogoDiv{
+  border-style: dotted;
+  width:100%!important;
+}
+
+.labelDiv{
+  border-style: dotted;
+  width:100%!important
 }

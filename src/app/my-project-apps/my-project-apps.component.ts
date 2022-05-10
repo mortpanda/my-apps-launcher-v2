@@ -98,7 +98,7 @@ export class MyProjectAppsComponent implements OnInit {
             switch (this.bolGHURL){
               case true:{
                 this.myProjectApps.push({
-                  lebel: arrApps[i].Label,
+                  label: arrApps[i].Label,
                   logoURI: arrApps[i]["Links.logo.0.href"],
                   struri:  arrApps[i]["Settings.oauthClient.post_logout_redirect_uris"][n],
                 });

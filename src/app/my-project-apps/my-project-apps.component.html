@@ -4,23 +4,32 @@
   <div class="userName">{{strFullName}}</div>
 
   <div class="MasterDiv" fxLayout="row wrap" fxLayoutAlign="center center">
-
     <div class="pageTitleDiv">
       My Project Apps
     </div>
 
     <div class="projMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
-
-
       <div *ngIf="appLoad; else notShow">
-        Loaded
+
+        <button pButton pRipple type="button" class="p-button-raised p-button-text p-button-plain"
+          *ngFor="let itemProject of myProjectApps" id="myProjectBtn">
+
+          <div class="projectBtnLogoDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+            <img src="{{itemProject.logoURI}}" class="projectLogo">
+          </div>
+          <div class="labelDiv">
+            {{ itemProject.label }}
+          </div>
+        </button>
+
+
       </div>
 
 
       <ng-template #notShow>
         <div class="p-field p-col-12 p-md-6">
           <p-progressSpinner strokeWidth="8"></p-progressSpinner>
-          
+
         </div>
       </ng-template>
 
@@ -51,7 +60,7 @@
     </div>
 
     <div class="smprojMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
-      
+
       <div *ngIf="appLoad; else notShow">
         Loaded
       </div>
@@ -60,11 +69,11 @@
       <ng-template #notShow>
         <div class="p-field p-col-12 p-md-6">
           <p-progressSpinner></p-progressSpinner>
-          
+
         </div>
       </ng-template>
 
-      
+
       <!-- <div class="PanelDiv" *ngFor="let itemWebites of DevInfo">
         <p-button id="appBtn" icon="pi pi-external-link" iconPos="right" (onClick)="OpenWebsite(itemWebites.url)">
 
