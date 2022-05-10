@@ -32,6 +32,7 @@ import { WorldTimeComponent } from './world-time/world-time.component';
 import {FieldsetModule} from 'primeng/fieldset';
 import { DatePipe } from '@angular/common';
 import { MyProjectAppsComponent } from './my-project-apps/my-project-apps.component';
+import {ProgressSpinnerModule} from 'primeng/progressspinner';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { MyProjectAppsComponent } from './my-project-apps/my-project-apps.compon
     SpeedDialModule,
     PanelModule,
     FieldsetModule,
-
+    ProgressSpinnerModule,
+    
   ],
   providers: [
     DatePipe,

@@ -21,6 +21,7 @@ export class WorldTimeComponent implements OnInit {
   strUserSession;
   strThisUser;
   strFullName;
+  
 
   constructor(
     public OktaGetTokenService: OktaGetTokenService,
@@ -37,15 +38,10 @@ export class WorldTimeComponent implements OnInit {
       this.smallScreen = result.matches;
     });
   }
-
-  //  @HostListener('window:resize', ['$event'])
-  //  onResize(event) {
-  //    event.target.innerWidth;
-  //    window.location.reload();
-  //  }
+ 
 
   async ngOnInit() {
-
+    
     this.strUserSession = await this.authService.isAuthenticated();
     console.log(this.strUserSession)
     switch (this.strUserSession == true) {
@@ -60,8 +56,9 @@ export class WorldTimeComponent implements OnInit {
             console.log(err);
             window.location.replace(this.OktaConfigService.strPostLogoutURL);
           })
-        this.strFullName = this.strThisUser.name;
-        this.WorldClockService.GetWorldTime();
+        this.strFullName = await this.strThisUser.name;
+        await this.WorldClockService.GetWorldTime();
+        
         break;
     }
     console.log(this.strThisUser)

@@ -9,7 +9,21 @@
       My Project Apps
     </div>
 
-    <div class="startMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+    <div class="projMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+
+
+      <div *ngIf="appLoad; else notShow">
+        Loaded
+      </div>
+
+
+      <ng-template #notShow>
+        <div class="p-field p-col-12 p-md-6">
+          <p-progressSpinner strokeWidth="8"></p-progressSpinner>
+          
+        </div>
+      </ng-template>
+
       <!-- <div class="PanelDiv" *ngFor="let itemWebites of DevInfo">
         <p-button id="appBtn" icon="pi pi-external-link" iconPos="right" (onClick)="OpenWebsite(itemWebites.url)" pTooltip="{{itemWebites.url}}"  tooltipPosition="bottom">
           <a>{{itemWebites.name}}</a>
@@ -36,7 +50,21 @@
       Dev Info
     </div>
 
-    <div class="smstartMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+    <div class="smprojMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+      
+      <div *ngIf="appLoad; else notShow">
+        Loaded
+      </div>
+
+
+      <ng-template #notShow>
+        <div class="p-field p-col-12 p-md-6">
+          <p-progressSpinner></p-progressSpinner>
+          
+        </div>
+      </ng-template>
+
+      
       <!-- <div class="PanelDiv" *ngFor="let itemWebites of DevInfo">
         <p-button id="appBtn" icon="pi pi-external-link" iconPos="right" (onClick)="OpenWebsite(itemWebites.url)">
 

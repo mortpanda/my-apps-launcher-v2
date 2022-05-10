@@ -21,6 +21,7 @@ export class MyProjectAppsComponent implements OnInit {
   public authService = new OktaAuth(this.OktaSDKAuthService.config);
   strUserSession;
   strThisUser;
+  appLoad:boolean;
   constructor(
     public OktaGetTokenService: OktaGetTokenService,
     public OktaSDKAuthService: OktaSDKAuthService,
@@ -43,6 +44,7 @@ export class MyProjectAppsComponent implements OnInit {
   strFullName
   appResponse;
   async ngOnInit() {
+    this.appLoad=false;
     this.strUserSession = await this.authService.isAuthenticated();
     console.log(this.strUserSession)
     switch (this.strUserSession == true) {
@@ -72,7 +74,8 @@ export class MyProjectAppsComponent implements OnInit {
         }
         this.appResponse = await this.OktaApiService.InvokeFlow(this.invokeURI, requestBody)
         // console.log(this.appResponse)
-        this.processApps(this.appResponse)
+        this.processApps(this.appResponse);
+        this.appLoad=true;
         break;
     }
   }
