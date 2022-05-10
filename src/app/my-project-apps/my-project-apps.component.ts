@@ -90,17 +90,8 @@ export class MyProjectAppsComponent implements OnInit {
           break;
         }
         default: {
-          // console.log(arrApps[i])
-
-          // this.myProjectApps.push({
-          //   lebel: arrApps[i].Label,
-          //   logoURI: arrApps[i]["Links.logo.0.href"],
-
-          // });
           for (var n = 0; n < arrApps[i]["Settings.oauthClient.post_logout_redirect_uris"].length; n++) {
             this.bolGHURL = arrApps[i]["Settings.oauthClient.post_logout_redirect_uris"][n].includes(this.ghURL);
-            // console.log(this.bolGHURL)
-            // console.log(arrApps[i]["Settings.oauthClient.post_logout_redirect_uris"][n])
             switch (this.bolGHURL){
               case true:{
                 this.myProjectApps.push({
