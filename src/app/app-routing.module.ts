@@ -8,6 +8,7 @@ import { OktaWebsitesComponent } from './okta-websites/okta-websites.component';
 import { KlabSitesComponent } from './klab-sites/klab-sites.component';
 import { DevinfoWebsitesComponent } from './devinfo-websites/devinfo-websites.component';
 import { WorldTimeComponent } from './world-time/world-time.component';
+import { MyProjectAppsComponent } from './my-project-apps/my-project-apps.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: LandingComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'devinfo', component: DevinfoWebsitesComponent },
   { path: 'klab', component: KlabSitesComponent },
   { path: 'worldtime', component: WorldTimeComponent },
+  { path: 'project-apps', component: MyProjectAppsComponent },
 ];
 
 @NgModule({

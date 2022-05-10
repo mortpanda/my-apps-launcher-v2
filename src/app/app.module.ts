@@ -31,6 +31,7 @@ import { DevinfoWebsitesComponent } from './devinfo-websites/devinfo-websites.co
 import { WorldTimeComponent } from './world-time/world-time.component';
 import {FieldsetModule} from 'primeng/fieldset';
 import { DatePipe } from '@angular/common';
+import { MyProjectAppsComponent } from './my-project-apps/my-project-apps.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { DatePipe } from '@angular/common';
     KlabSitesComponent,
     DevinfoWebsitesComponent,
     WorldTimeComponent,
+    MyProjectAppsComponent,
 
   ],
   imports: [

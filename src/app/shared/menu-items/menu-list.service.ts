@@ -53,6 +53,12 @@ export class MenuListService {
       routerLink: '/devinfo'
     },
     {
+      label: 'My Project Apps',
+      icon: "pi pi-bookmark",
+      style: 'font-size: 1.5rem;',
+      routerLink: '/project-apps'
+    },
+    {
       label: 'World Time',
       icon: "pi pi-clock",
       style: 'font-size: 1.5rem;',
