@@ -7,7 +7,7 @@ import { OktaConfigService } from "../shared/okta/okta-config.service";
 import { OktaWidgetService } from '../shared/okta/okta-widget.service';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MenuItem } from 'primeng/api';
-import { OktaApiService } from 'app/shared/okta/okta-api.service';
+import { OktaApiService } from '../shared/okta/okta-api.service';
 
 
 @Component({
