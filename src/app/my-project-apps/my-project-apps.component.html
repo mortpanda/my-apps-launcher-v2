@@ -10,19 +10,16 @@
 
     <div class="projMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
       <div *ngIf="appLoad; else notShow">
-
-        <button pButton pRipple type="button" class="p-button-raised p-button-text p-button-plain"
-          styleClass="p-button-lg" *ngFor="let itemProject of myProjectApps" id="myProjectBtn">
-
+        
+        <p-button  id="appBtn" *ngFor="let itemProject of myProjectApps" (onClick)="OpenWebsite(itemProject.struri)" >
+          
           <div class="projectBtnLogoDiv" fxLayout="row wrap" fxLayoutAlign="center center">
             <img src="{{itemProject.logoURI}}" class="projectLogo">
           </div>
           <div class="labelDiv">
             {{ itemProject.label }}
           </div>
-        </button>
-
-
+        </p-button>
       </div>
 
 
@@ -33,11 +30,7 @@
         </div>
       </ng-template>
 
-      <!-- <div class="PanelDiv" *ngFor="let itemWebites of DevInfo">
-        <p-button id="appBtn" icon="pi pi-external-link" iconPos="right" (onClick)="OpenWebsite(itemWebites.url)" pTooltip="{{itemWebites.url}}"  tooltipPosition="bottom">
-          <a>{{itemWebites.name}}</a>
-        </p-button>
-      </div> -->
+    
     </div>
 
     <div class="bannerDiv">
@@ -61,18 +54,15 @@
 
     <div class="smprojMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
 
-      <div class="smBtnDiv" *ngIf="appLoad; else notShow">
-        <button pButton pRipple type="button" class="p-button-raised p-button-text p-button-plain"
-          styleClass="p-button-lg" *ngFor="let itemProject of myProjectApps" id="smMyProjectBtn">
-
-          <div class="projectBtnLogoDiv" fxLayout="row wrap" fxLayoutAlign="center center">
-            <img src="{{itemProject.logoURI}}" class="projectLogo">
-          </div>
-          <div class="labelDiv">
-            {{ itemProject.label }}
-          </div>
-        </button>
-      </div>
+      <p-button  id="appBtn" *ngFor="let itemProject of myProjectApps" (onClick)="OpenWebsite(itemProject.struri)" >
+          
+        <div class="projectBtnLogoDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+          <img src="{{itemProject.logoURI}}" class="projectLogo">
+        </div>
+        <div class="labelDiv">
+          {{ itemProject.label }}
+        </div>
+      </p-button>
 
 
       <ng-template #notShow>
@@ -81,16 +71,8 @@
             <p-progressSpinner strokeWidth="8" id="smProgress"></p-progressSpinner>
 
           </div>
-          </div>
+        </div>
       </ng-template>
-
-
-      <!-- <div class="PanelDiv" *ngFor="let itemWebites of DevInfo">
-        <p-button id="appBtn" icon="pi pi-external-link" iconPos="right" (onClick)="OpenWebsite(itemWebites.url)">
-
-          <a>{{itemWebites.name}}</a>
-        </p-button>
-      </div> -->
     </div>
 
     <div class="bannerDiv">

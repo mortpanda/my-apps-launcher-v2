@@ -117,6 +117,10 @@ export class MyProjectAppsComponent implements OnInit {
     console.log(this.myProjectApps)
   }
 
+  async OpenWebsite(url) {
+    await window.open(url, '_blank');
+
+  }
 
 
 }
