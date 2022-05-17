@@ -271,8 +271,8 @@ export const DevInfo = [
     url: 'https://fonts.google.com/icons?selected=Material+Icons',
   },
   {
-    name: 'By People CSS Snippets',
-    url: 'https://www.bypeople.com/css-snippets',
+    name: 'Logo Maker',
+    url: 'https://www.designevo.com/logo-maker/',
   },
   {
     name: 'Ionic Components',
