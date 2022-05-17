@@ -11,7 +11,7 @@
     <div class="projMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
       <div *ngIf="appLoad; else notShow">
         
-        <p-button  id="appBtn" *ngFor="let itemProject of myProjectApps" (onClick)="OpenWebsite(itemProject.struri)" >
+        <p-button  id="projectBtn" *ngFor="let itemProject of myProjectApps" (onClick)="OpenWebsite(itemProject.struri)" >
           
           <div class="projectBtnLogoDiv" fxLayout="row wrap" fxLayoutAlign="center center">
             <img src="{{itemProject.logoURI}}" class="projectLogo">
@@ -54,7 +54,7 @@
 
     <div class="smprojMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
 
-      <p-button  id="appBtn" *ngFor="let itemProject of myProjectApps" (onClick)="OpenWebsite(itemProject.struri)" >
+      <p-button  id="projectBtn" *ngFor="let itemProject of myProjectApps" (onClick)="OpenWebsite(itemProject.struri)" >
           
         <div class="projectBtnLogoDiv" fxLayout="row wrap" fxLayoutAlign="center center">
           <img src="{{itemProject.logoURI}}" class="projectLogo">
