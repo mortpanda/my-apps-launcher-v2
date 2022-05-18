@@ -10,9 +10,9 @@
 
     <div class="projMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
       <div *ngIf="appLoad; else notShow">
-        
-        <p-button  id="projectBtn" *ngFor="let itemProject of myProjectApps" (onClick)="OpenWebsite(itemProject.struri)" >
-          
+
+        <p-button id="projectBtn" *ngFor="let itemProject of myProjectApps" (onClick)="OpenWebsite(itemProject.struri)">
+
           <div class="projectBtnLogoDiv" fxLayout="row wrap" fxLayoutAlign="center center">
             <img src="{{itemProject.logoURI}}" class="projectLogo">
           </div>
@@ -30,7 +30,7 @@
         </div>
       </ng-template>
 
-    
+
     </div>
 
     <div class="bannerDiv">
@@ -49,23 +49,25 @@
   <div class="smMasterDiv" fxLayout="row wrap" fxLayoutAlign="center center">
 
     <div class="smpageTitleDiv">
-      Dev Info
+      My Project Apps
     </div>
 
     <div class="smprojMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
 
-      <p-button  id="projectBtn" *ngFor="let itemProject of myProjectApps" (onClick)="OpenWebsite(itemProject.struri)" >
-          
-        <div class="projectBtnLogoDiv" fxLayout="row wrap" fxLayoutAlign="center center">
-          <img src="{{itemProject.logoURI}}" class="projectLogo">
-        </div>
-        <div class="labelDiv">
-          {{ itemProject.label }}
-        </div>
-      </p-button>
+      <div *ngIf="appLoad; else notShow">
+        <p-button id="projectBtn" *ngFor="let itemProject of myProjectApps" (onClick)="OpenWebsite(itemProject.struri)">
 
+          <div class="projectBtnLogoDiv" fxLayout="row wrap" fxLayoutAlign="center center">
+            <img src="{{itemProject.logoURI}}" class="projectLogo">
+          </div>
+          <div class="labelDiv">
+            {{ itemProject.label }}
+          </div>
+        </p-button>
+      </div>
 
       <ng-template #notShow>
+        
         <div class="smProgressDiv">
           <div class="p-field p-col-12 p-md-6" id="smProgressDiv">
             <p-progressSpinner strokeWidth="8" id="smProgress"></p-progressSpinner>
