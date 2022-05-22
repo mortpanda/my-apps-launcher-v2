@@ -13,7 +13,7 @@ export class MenuListService {
     private OktaConfigService: OktaConfigService,
   ) { }
 
-  
+ 
 
   subMenuItem = [
     {
