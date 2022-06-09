@@ -1,7 +1,7 @@
 .MasterDiv {
   // border-style: dotted;
   padding-top: 120px !important;
-  text-align: center!important;
+  text-align: center !important;
 }
 
 .smMasterDiv {
@@ -20,7 +20,7 @@
   margin-top: 60px !important;
   // width: 100%;
   width: 85vw;
-  text-align: center!important;
+  text-align: center !important;
 }
 
 .userName {
@@ -52,8 +52,9 @@
     border-color: #00297a !important;
     box-shadow: 3px 9px 10px -2px black !important;
     font-size: 14px !important;
-    margin-top: 10px!important;
+    margin-top: 10px !important;
   }
+
   .p-button:hover {
     width: 200px;
     height: 100px;
@@ -67,11 +68,13 @@
     opacity: 0.7;
     font-size: 14px !important;
   }
+
   .pi {
     // background-color: #ffffff !important;
     color: #00297a !important;
     margin-left: 15px !important;
   }
+
   .pi:hover {
     // background-color: #00297a !important;
     // color: #ffffff !important;
@@ -93,6 +96,7 @@
   font-size: 18px !important;
   font-weight: 800 !important;
 }
+
 .smpageTitleDiv {
   width: 100%;
   text-align: center !important;
@@ -101,18 +105,22 @@
   font-weight: 800 !important;
   margin-top: 20px !important;
 }
-.p-field, .p-col-12, .p-md-6 {
-  width: 200px  !important;
+
+.p-field,
+.p-col-12,
+.p-md-6 {
+  width: 200px !important;
   height: 200px !important;
 }
+
 .p-progress-spinner-svg {
-  width: 200px  !important;
-  height: 200px !important;  
+  width: 200px !important;
+  height: 200px !important;
 }
 
 
-#myProjectBtn{
-  
+#myProjectBtn {
+
   text-align: center !important;
   align-items: center !important;
   align-self: center !important;
@@ -134,8 +142,9 @@
   border-width: 1px !important;
   border-style: solid !important;
   border-color: #00297a !important;
-  opacity: 0.5!important;
+  opacity: 0.5 !important;
   box-shadow: 3px 9px 10px -2px black !important;
+
   .p-button-icon {
     color: #00297a !important;
 
@@ -143,41 +152,45 @@
 }
 
 
-#myProjectBtn{
-  width: 200px!important;
-  height: 100px!important;
-  font-size: 12px!important;
-}
-.projectLogo{
-  width:90%!important;
+#myProjectBtn {
+  width: 200px !important;
+  height: 100px !important;
+  font-size: 12px !important;
 }
 
-.projectBtnLogoDiv{
-  width:100%!important;
+.projectLogo {
+  width: 90% !important;
+}
+
+.projectBtnLogoDiv {
+  width: 100% !important;
   // border-style: dotted;
 }
 
-.labelDiv{
-  width:100%!important
+.labelDiv {
+  width: 100% !important
 }
 
-#smProgressDiv{
-  .p-field, .p-col-12, .p-md-6 {
-    text-align: center!important;
-    width: 200px  !important;
+#smProgressDiv {
+
+  .p-field,
+  .p-col-12,
+  .p-md-6 {
+    text-align: center !important;
+    width: 200px !important;
     height: 200px !important;
   }
 }
 
-#smProgress{
+#smProgress {
   .p-progress-spinner-svg {
-     width: 100px  !important;
-    height: 100px !important;  
-  } 
+    width: 100px !important;
+    height: 100px !important;
+  }
 }
 
 
-#smMyProjectBtn{
+#smMyProjectBtn {
 
   text-align: center !important;
   align-items: center !important;
@@ -200,8 +213,9 @@
   border-width: 1px !important;
   border-style: solid !important;
   border-color: #00297a !important;
-  opacity: 0.5!important;
+  opacity: 0.5 !important;
   box-shadow: 3px 9px 10px -2px black !important;
+
   .p-button-icon {
     color: #00297a !important;
 
@@ -209,14 +223,23 @@
 }
 
 
-#smMyProjectBtn{
-  width: 200px!important;
-  height: 100px!important;
-  font-size: 12px!important;
-  margin-top: 10px!important;
+#smMyProjectBtn {
+  width: 200px !important;
+  height: 100px !important;
+  font-size: 12px !important;
+  margin-top: 10px !important;
 }
 
-.bannerDiv{
-  
-  width:100%!important;
+.bannerDiv {
+
+  width: 100% !important;
+}
+
+
+#projLoad {
+  .p-progress-spinner {
+    position:fixed!important;
+    right: 50% !important;
+    text-align: center !important;
+  }
 }
