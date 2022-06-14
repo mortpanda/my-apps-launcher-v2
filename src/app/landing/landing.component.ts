@@ -35,7 +35,7 @@ export class LandingComponent implements OnInit {
   
   async ngOnInit() {
     await this.OktaWidgetService.CloseWidget();
-    await this.OktaWidgetService.login(this.OktaConfigService.strRedirectURL,true);
+    await this.OktaWidgetService.login(this.OktaConfigService.strRedirectURL);
   }
 
 }
