@@ -26,6 +26,11 @@ export const UserSites = [
     url: 'https://kent-nagao-oie.oktapreview.com/'
   },
   {
+    name: 'White Liond Den',
+    url: 'https://white-lions-den.okta.com//',
+    // image: 'assets/img/okta_logo_blue_small.png'
+  },
+  {
     name: 'CSM Lab',
     url: 'https://csm-apac.oktapreview.com/',
     image: 'assets/img/okta_logo_blue_small.png'
@@ -321,6 +326,11 @@ export const AdminSites = [
   {
     name: 'Kent Lab - OIE Org',
     url: 'https://kent-nagao-oie-admin.oktapreview.com/admin/dashboard'
+  },
+  {
+    name: 'White Liond Den',
+    url: 'https://white-lions-den-admin.okta.com/admin/dashboard/',
+    // image: 'assets/img/okta_logo_blue_small.png'
   },
   {
     name: 'CSM Lab',
