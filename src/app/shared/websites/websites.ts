@@ -310,7 +310,7 @@ export const DevInfo = [
 //  *****************************************************************
 export const AdminSites = [
   {
-    name: 'Kent Lab',
+    name: 'Kent Okta Classic Lab',
     url: 'https://kent-nagao-test-admin.oktapreview.com',
     image: 'assets/img/okta-japan-small.png'
   },
